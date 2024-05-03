@@ -20,3 +20,8 @@ Make trivial class to improve quality and performance
 
 ### [Back to Basics: Debugging in Cpp - Greg Law](https://www.youtube.com/watch?v=qgszy9GquRs&list=PLHTh1InhhwT7gQEuYznhhvAYTel0qzl72&index=12)
 Various tools to debug c++ and some compile time analysis
+
+# CPP Now
+## 2023
+### [Value Oriented Programming Part 1: You Say You Want to Write a Function - Tony Van Eerd](https://www.youtube.com/watch?v=b4p_tcLYDV0&list=PL_AKIMJc4roUIwMsWnA9WPFJdCRfNUWHP&index=46)
+General talk around code quality
