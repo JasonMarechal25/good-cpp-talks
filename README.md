@@ -24,6 +24,8 @@ Various tools to debug c++ and some compile time analysis
 ## 2022
 ### [Can C++ be 10x Simpler & Safer? - Herb Sutter](https://www.youtube.com/watch?v=ELeZAKCN4tY&list=PLHTh1InhhwT6c2JNtUiJkaH8YRqzhU7Ag&index=2&t=4840s)
 Really interesting talk on a new syntaxe for c++, challenges and possibilities
+### [Breaking Dependencies - The Visitor Design Pattern in Cpp - Klaus Iglberger](https://www.youtube.com/watch?v=PEcy1vYHb8A&list=PLHTh1InhhwT6c2JNtUiJkaH8YRqzhU7Ag&index=14)
+Re-explaining visitor: use it when you want to add operations not type.
 
 # CPP Now
 ## 2023
