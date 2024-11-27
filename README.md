@@ -1,4 +1,8 @@
 # CPP Con
+## 2024
+### [Back to Basics: Almost Always Vector - Kevin Carpenter](https://www.youtube.com/watch?v=VRGRTvfOxb4)
+Why vector exists at all compared to C-style array. General (or not) information on how a vector behave, some use case, and some counter cases.
+for-range loop copy values, beware.
 ## 2023
 ###  [Continuous Regression Testing for Safer and Faster Refactoring in C++ - Pejman Ghorbanzade - CppCon](https://www.youtube.com/watch?v=c8Z3iSL9vYs&list=PLHTh1InhhwT7gQEuYznhhvAYTel0qzl72&index=21)
 Talk about testing and demonstration of Tuca OSS for test regression. Tuca capture the state of an application to compare it between different runs at different commits.
