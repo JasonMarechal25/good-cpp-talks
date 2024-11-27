@@ -1,5 +1,8 @@
 # CPP Con
 ## 2024
+### [Back to Basics: Unit Testing in C++ - Dave Steffen - CppCon](https://www.youtube.com/watch?v=MwoAM3sznS0&list=PLHTh1InhhwT6U7t1yP2K8AtTEKmcM3XU_&index=7)
+What is unit test? Why unit test? Black box/white box. Better bad tests than no test. No test can lead to project failure, bad tests can at least catch some bugs, and you learn.
+
 ### [Back to Basics: Almost Always Vector - Kevin Carpenter](https://www.youtube.com/watch?v=VRGRTvfOxb4)
 Why vector exists at all compared to C-style array. General (or not) information on how a vector behave, some use case, and some counter cases.
 for-range loop copy values, beware.
