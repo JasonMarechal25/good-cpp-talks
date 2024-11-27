@@ -1,5 +1,9 @@
 # CPP Con
 ## 2024
+
+### [Hidden Overhead of a Function API - Oleksandr Bacherikov](https://www.youtube.com/watch?v=PCP3ckEqYK8&list=PLHTh1InhhwT6U7t1yP2K8AtTEKmcM3XU_&index=16)
+Type of parameters, numbers and use order may influence generated compiled code and performance and in contradiction to core guidelines. Always measure
+
 ### [Back to Basics: Unit Testing in C++ - Dave Steffen - CppCon](https://www.youtube.com/watch?v=MwoAM3sznS0&list=PLHTh1InhhwT6U7t1yP2K8AtTEKmcM3XU_&index=7)
 What is unit test? Why unit test? Black box/white box. Better bad tests than no test. No test can lead to project failure, bad tests can at least catch some bugs, and you learn.
 
