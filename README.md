@@ -1,6 +1,9 @@
 # CPP Con
 ## 2024
 
+### [What’s Eating my RAM? - C++ Memory Management - Jianfei Pan](https://www.youtube.com/watch?v=y6AN0ks2q0A)
+Talk about why a service could use more and more ram in time or more than expected. Talk about mamory leak and memory fragmentation, and tools and methods to detect it.
+
 ### [Hidden Overhead of a Function API - Oleksandr Bacherikov](https://www.youtube.com/watch?v=PCP3ckEqYK8&list=PLHTh1InhhwT6U7t1yP2K8AtTEKmcM3XU_&index=16)
 Type of parameters, numbers and use order may influence generated compiled code and performance and in contradiction to core guidelines. Always measure
 
