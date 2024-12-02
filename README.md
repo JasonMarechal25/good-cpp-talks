@@ -10,7 +10,7 @@ Type of parameters, numbers and use order may influence generated compiled code 
 ### [Back to Basics: Unit Testing in C++ - Dave Steffen - CppCon](https://www.youtube.com/watch?v=MwoAM3sznS0&list=PLHTh1InhhwT6U7t1yP2K8AtTEKmcM3XU_&index=7)
 What is unit test? Why unit test? Black box/white box. Better bad tests than no test. No test can lead to project failure, bad tests can at least catch some bugs, and you learn.
 
-### [Back to Basics: Almost Always Vector - Kevin Carpenter](https://www.youtube.com/watch?v=VRGRTvfOxb4)
+### [Back to Basics: Almost Always Vector - Kevin Carpenter](https://wvww.youtube.com/watch?v=VRGRTvfOxb4)
 Why vector exists at all compared to C-style array. General (or not) information on how a vector behave, some use case, and some counter cases.
 for-range loop copy values, beware.
 ## 2023
@@ -53,11 +53,11 @@ Clang tool and talk around AST produced by tools and how to make a parser and ge
 # Code::Dive
 ## 2014
 ### [Scott Meyers: Cpu Caches and Why You Care](https://www.youtube.com/watch?v=WDIkqP4JbkE)
-Hardware optimization is a thing and happen because of caches
-Fetching a value for reading doesn't only fetch the value but the whole cache line (64 bytes)
-Reading values from the same cache line is fast
-Having to change cache line is costly: e.g. cache lien is full and new data is not in it
-Arrays are the prefered data structure of cpu because contigus values can be read from the same cache line
-For matix, row by row is faster than column by column (assuming columns are array of rows and rows array of values) for this reason
-Writing a value invalidate the cache line, need to refetch it
-False sharing occures when there is no logical dependency but hardware dependency. When multiple thread need to read/write (read only is not an issue) the same cache line. Better try to do a maximum of operation in the thread local storage and report to the global state only when necessary. Or copy the global state sub data set locally instead of trying to read it multiple times if there is a risque of it being invalidated.
+* Hardware optimization is a thing and happen because of caches
+* Fetching a value for reading doesn't only fetch the value but the whole cache line (64 bytes)
+* Reading values from the same cache line is fast
+* Having to change cache line is costly: e.g. cache lien is full and new data is not in it
+* Arrays are the prefered data structure of cpu because contigus values can be read from the same cache line
+* For matix, row by row is faster than column by column (assuming columns are array of rows and rows array of values) for this reason
+* Writing a value invalidate the cache line, need to refetch it
+* False sharing occures when there is no logical dependency but hardware dependency. When multiple thread need to read/write (read only is not an issue) the same cache line. Better try to do a maximum of operation in the thread local storage and report to the global state only when necessary. Or copy the global state sub data set locally instead of trying to read it multiple times if there is a risque of it being invalidated.
