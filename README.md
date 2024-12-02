@@ -49,3 +49,15 @@ General talk around code quality
 A clang tool to migrate to strong type. Essentially migrate from int to value type
 ### [Large Scale Automated Refactoring Across Translation Unit Boundaries in C++ - Zie Weaver](https://www.youtube.com/watch?v=1EMmgOKBWlI&list=PL_AKIMJc4roUIwMsWnA9WPFJdCRfNUWHP&index=15)
 Clang tool and talk around AST produced by tools and how to make a parser and generator to refactor at large scale
+
+# Code::Dive
+## 2014
+### [Scott Meyers: Cpu Caches and Why You Care](https://www.youtube.com/watch?v=WDIkqP4JbkE)
+Hardware optimization is a thing and happen because of caches
+Fetching a value for reading doesn't only fetch the value but the whole cache line (64 bytes)
+Reading values from the same cache line is fast
+Having to change cache line is costly: e.g. cache lien is full and new data is not in it
+Arrays are the prefered data structure of cpu because contigus values can be read from the same cache line
+For matix, row by row is faster than column by column (assuming columns are array of rows and rows array of values) for this reason
+Writing a value invalidate the cache line, need to refetch it
+False sharing occures when there is no logical dependency but hardware dependency. When multiple thread need to read/write (read only is not an issue) the same cache line. Better try to do a maximum of operation in the thread local storage and report to the global state only when necessary. Or copy the global state sub data set locally instead of trying to read it multiple times if there is a risque of it being invalidated.
