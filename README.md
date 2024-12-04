@@ -61,3 +61,18 @@ Clang tool and talk around AST produced by tools and how to make a parser and ge
 * For matix, row by row is faster than column by column (assuming columns are array of rows and rows array of values) for this reason
 * Writing a value invalidate the cache line, need to refetch it
 * False sharing occures when there is no logical dependency but hardware dependency. When multiple thread need to read/write (read only is not an issue) the same cache line. Better try to do a maximum of operation in the thread local storage and report to the global state only when necessary. Or copy the global state sub data set locally instead of trying to read it multiple times if there is a risque of it being invalidated.
+
+# Data Oriented Design
+Various talk around DoD. A better list is available here.
+
+I'm summarizing various talk here because I'm still not sure to have understood everything properly and being able to summarize each one individually
+
+* [Pitfalls of Object Oriented Programming, Revisited - Tony Albrecht (TGC 2017)](https://youtu.be/VAT9E-M-PoE?si=gP-3kl_z8QaCLPNO)
+* [CppCon 2014: Chandler Carruth "Efficiency with Algorithms, Performance with Data Structures"](https://www.youtube.com/watch?v=fHNmRkzxHWs&list=PLEzW09wOBHDqLlGEP7vptwuE4-Jd7P6UT&index=1)
+* [Data-Oriented Design and Modern C++ - Floris Bob van Elzelingen - CppNow 2023](https://www.youtube.com/watch?v=GoIOnQEmXbs&list=PL_AKIMJc4roUIwMsWnA9WPFJdCRfNUWHP&index=11)
+* [Andrew Kelley Practical Data Oriented Design (DoD)](https://www.youtube.com/watch?v=IroPQ150F6c&t=281s)
+
+CPU is faster than memory. You can leverage CPU caches to have more efficient program.
+* Take care of data structure and alignement. By reducing the size of data you increase the likelyhood of hitting cache.
+* Think about data stream. If you have dedicated process for a subset of data in various instances of a data structure it may be a goos idea to extract this subset in a dedicated array. Think structure of array instead of array of structure.
+* By extension Entity Component System is DoD
